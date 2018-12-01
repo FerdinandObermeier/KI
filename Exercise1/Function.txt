@@ -1,0 +1,94 @@
+public static String findPossiblePaths(char[][] inputMatrix, int[][] fuelMatrix, int currentPositionI, int currentPositionJ, int goalPositionI, int goalPositionJ, ArrayList<Integer> history){
+
+    	counter = counter +1;
+        System.out.println(history);
+        ArrayList<Integer> newHistory = history;
+
+        if(!continueSearching(fuelMatrix)){
+           return getOutput(fuelMatrix, goalPositionI, goalPositionJ);
+        }
+        else{
+            if(goRight(inputMatrix, currentPositionI, currentPositionJ)&&betterPath(fuelMatrix, currentPositionI, currentPositionJ, 1))
+            {
+                newHistory.add(1);
+                fuelMatrix[currentPositionI][currentPositionJ+1] = fuelMatrix[currentPositionI][currentPositionJ]+5;
+                findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI, currentPositionJ+1, goalPositionI, goalPositionJ, newHistory);
+            }
+            else if(goLeft(inputMatrix, currentPositionI, currentPositionJ)&&betterPath(fuelMatrix, currentPositionI, currentPositionJ, 2))
+            {
+                newHistory.add(2);
+                fuelMatrix[currentPositionI][currentPositionJ-1] = fuelMatrix[currentPositionI][currentPositionJ]+5;
+                findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI, currentPositionJ-1, goalPositionI, goalPositionJ, newHistory);
+            }
+            else if(goUp(inputMatrix, currentPositionI, currentPositionJ)&&betterPath(fuelMatrix, currentPositionI, currentPositionJ, 3))
+            {
+                newHistory.add(3);
+                fuelMatrix[currentPositionI-1][currentPositionJ] = fuelMatrix[currentPositionI][currentPositionJ]+6;
+                findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI-1, currentPositionJ, goalPositionI, goalPositionJ, newHistory);
+            }
+            else if(goDown(inputMatrix, currentPositionI, currentPositionJ)&&betterPath(fuelMatrix, currentPositionI, currentPositionJ, 4))
+            {
+                newHistory.add(4);
+                fuelMatrix[currentPositionI+1][currentPositionJ] = fuelMatrix[currentPositionI][currentPositionJ]+6;
+                findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI+1, currentPositionJ, goalPositionI, goalPositionJ, newHistory);
+            }
+            else if(goDiagonalUpperRight(inputMatrix, currentPositionI, currentPositionJ)&&betterPath(fuelMatrix, currentPositionI, currentPositionJ, 5))
+            {
+                newHistory.add(5);
+                fuelMatrix[currentPositionI-1][currentPositionJ+1] = fuelMatrix[currentPositionI][currentPositionJ]+10;
+                findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI-1, currentPositionJ+1, goalPositionI, goalPositionJ, newHistory);
+            }
+            else if(goDiagonalUpperLeft(inputMatrix, currentPositionI, currentPositionJ)&&betterPath(fuelMatrix, currentPositionI, currentPositionJ, 6))
+            {
+                newHistory.add(6);
+                fuelMatrix[currentPositionI-1][currentPositionJ-1] = fuelMatrix[currentPositionI][currentPositionJ]+10;
+                findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI-1, currentPositionJ-1, goalPositionI, goalPositionJ, newHistory);
+            }
+            else if(goDiagonalLowerRight(inputMatrix, currentPositionI, currentPositionJ)&&betterPath(fuelMatrix, currentPositionI, currentPositionJ, 7))
+            {
+                newHistory.add(7);
+                fuelMatrix[currentPositionI+1][currentPositionJ+1] = fuelMatrix[currentPositionI][currentPositionJ]+10;
+                findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI+1, currentPositionJ+1, goalPositionI, goalPositionJ, newHistory);
+            }
+            else if(goDiagonalLowerLeft(inputMatrix, currentPositionI, currentPositionJ)&&betterPath(fuelMatrix, currentPositionI, currentPositionJ, 8))
+            {
+                newHistory.add(8);
+                fuelMatrix[currentPositionI+1][currentPositionJ-1] = fuelMatrix[currentPositionI][currentPositionJ]+10;
+                findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI+1, currentPositionJ-1, goalPositionI, goalPositionJ, newHistory);
+            }
+            else{
+                if(newHistory.get(newHistory.size()-1) == 0 || inputMatrix[currentPositionI][currentPositionJ] == 'R'){
+                    return getOutput(fuelMatrix, goalPositionI, goalPositionJ);
+                }
+                else{
+                    switch (newHistory.get(newHistory.size()-1)){
+                        case 1:
+                            newHistory.remove(newHistory.size()-1);
+                            findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI, currentPositionJ-1, goalPositionI, goalPositionJ, newHistory);
+                        case 2:
+                            newHistory.remove(newHistory.size()-1);
+                            findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI, currentPositionJ+1, goalPositionI, goalPositionJ, newHistory);
+                        case 3:
+                            newHistory.remove(newHistory.size()-1);
+                            findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI+1, currentPositionJ, goalPositionI, goalPositionJ, newHistory);
+                        case 4:
+                            newHistory.remove(newHistory.size()-1);
+                            findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI-1, currentPositionJ, goalPositionI, goalPositionJ, newHistory);
+                        case 5:
+                            newHistory.remove(newHistory.size()-1);
+                            findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI+1, currentPositionJ-1, goalPositionI, goalPositionJ, newHistory);
+                        case 6:
+                            newHistory.remove(newHistory.size()-1);
+                            findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI+1, currentPositionJ+1, goalPositionI, goalPositionJ, newHistory);
+                        case 7:
+                            newHistory.remove(newHistory.size()-1);
+                            findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI-1, currentPositionJ-1, goalPositionI, goalPositionJ, newHistory);
+                        case 8:
+                            newHistory.remove(newHistory.size()-1);
+                            findPossiblePaths(inputMatrix, fuelMatrix, currentPositionI-1, currentPositionJ+1, goalPositionI, goalPositionJ, newHistory);
+                    }
+                }
+            }
+        }
+        return getOutput(fuelMatrix, goalPositionI, goalPositionJ);
+    }
