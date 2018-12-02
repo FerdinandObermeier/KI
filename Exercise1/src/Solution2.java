@@ -32,42 +32,50 @@ public class Solution2 {
         int startI = i;
         int startJ = j;
 
-        while(i!=0&&i!=board.length&&j!=0&&j!=board[0].length&&!canConquer){
+        while(i!=0&&i!=board.length-1&&j!=0&&j!=board[0].length-1&&!canConquer){
             if(board[i][j-1] == '.'&&!alreadyVisited.contains(new Pair<Integer,Integer>(i,j-1))){
                 history.add(1);
                 j -= 1;
+                alreadyVisited.add(new Pair<Integer, Integer>(i,j));
             }
             else if(board[i][j+1] == '.'&&!alreadyVisited.contains(new Pair<Integer,Integer>(i,j+1))){
                 history.add(2);
                 j += 1;
+                alreadyVisited.add(new Pair<Integer, Integer>(i,j));
             }
             else if(board[i-1][j] == '.'&&!alreadyVisited.contains(new Pair<Integer,Integer>(i-1,j))){
                 history.add(3);
                 i -= 1;
+                alreadyVisited.add(new Pair<Integer, Integer>(i,j));
             }
             else if(board[i+1][j] == '.'&&!alreadyVisited.contains(new Pair<Integer,Integer>(i+1,j))){
                 history.add(4);
                 i +=1;
+                alreadyVisited.add(new Pair<Integer, Integer>(i,j));
             }
             else if(board[i-1][j+1] == '.'&&!alreadyVisited.contains(new Pair<Integer,Integer>(i-1,j+1))){
                 history.add(5);
                 i -= 1;
                 j += 1;
+                alreadyVisited.add(new Pair<Integer, Integer>(i,j));
             }
             else if(board[i-1][j-1] == '.'&&!alreadyVisited.contains(new Pair<Integer,Integer>(i-1,j-1))){
                 history.add(6);
                 i -= 1;
                 j -= 1;
+                alreadyVisited.add(new Pair<Integer, Integer>(i,j));
             }
             else if(board[i+1][j+1] == '.'&&!alreadyVisited.contains(new Pair<Integer,Integer>(i+1,j+1))){
                 history.add(7);
                 i += 1;
                 j += 1;
+                alreadyVisited.add(new Pair<Integer, Integer>(i,j));
             }
             else if(board[i+1][j-1] == '.'&&!alreadyVisited.contains(new Pair<Integer,Integer>(i+1,j-1))){
                 history.add(8);
                 i += 1;
                 j -= 1;
+                alreadyVisited.add(new Pair<Integer, Integer>(i,j));
             }
             else{
                 if(i==startI && j==startJ){

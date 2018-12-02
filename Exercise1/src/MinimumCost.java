@@ -1,5 +1,3 @@
-import org.jetbrains.annotations.NotNull;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -33,7 +31,7 @@ public class MinimumCost {
         fillArray(inputList);
     }
 
-    private static void fillArray(@NotNull String[] inputList){
+    private static void fillArray(String[] inputList){
 
         height = inputList.length;
         String currentString = inputList[0];
