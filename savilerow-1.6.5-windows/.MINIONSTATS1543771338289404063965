@@ -1,0 +1,2 @@
+#"CommandLineArguments" "Filename" "FirstNodeTime" "InitialPropagate" "MinionVersion" "Nodes" "ParsingTime" "Preprocess" "RandomSeed" "Satisfiable" "SetupTime" "SolutionsFound" "SolveTime" "TimeOut" "TotalTime" 
+examples\sudoku\sudoku.param.minion,-printsolsonly,-preprocess,SACBounds,-tableout,.MINIONSTATS1543771338289404063965,-solsout,.MINIONSOLS15437713382901566096282,-noprintsols examples\sudoku\sudoku.param.minion 0 0 0 1 0 SACBounds 1543769014 1 0 1 0.046875 0 0.046875 
