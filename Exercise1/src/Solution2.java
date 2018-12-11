@@ -53,7 +53,7 @@ public class Solution2 {
                 i +=1;
                 alreadyVisited.add(new Pair<Integer, Integer>(i,j));
             }
-            else if(board[i-1][j+1] == '.'&&!alreadyVisited.contains(new Pair<Integer,Integer>(i-1,j+1))){
+            /*else if(board[i-1][j+1] == '.'&&!alreadyVisited.contains(new Pair<Integer,Integer>(i-1,j+1))){
                 history.add(5);
                 i -= 1;
                 j += 1;
@@ -76,7 +76,7 @@ public class Solution2 {
                 i += 1;
                 j -= 1;
                 alreadyVisited.add(new Pair<Integer, Integer>(i,j));
-            }
+            }*/
             else{
                 if(i==startI && j==startJ){
                     canConquer = true;
@@ -99,7 +99,7 @@ public class Solution2 {
                             history.remove(history.size()-1);
                             i -=1;
                             break;
-                        case 5:
+                        /*case 5:
                             history.remove(history.size()-1);
                             i +=1;
                             j -=1;
@@ -118,7 +118,7 @@ public class Solution2 {
                             history.remove(history.size()-1);
                             i -=1;
                             j +=1;
-                            break;
+                            break;*/
                     }
                 }
             }
@@ -140,8 +140,7 @@ public class Solution2 {
     public static void main(String[] args) {
         try {
             /* Read the input matrix*/
-            //char[][] input = readFile(args[0]); TODO
-            char[][] input = readFile("input_for_task2.txt");
+            char[][] input = readFile(args[0]);
 
             /* Your main function to solve the problem*/
             char[][] output = solveTask2(input);

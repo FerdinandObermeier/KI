@@ -20,7 +20,7 @@ public class Solution2 {
             char[][] output = solveTask2(input);
 
             /*Print the solution matrix to a txt file*/
-            printMatrix(output, "output_for_task2.txt");
+            printMatrix(output, "output_for_task2(solution).txt");
 
         } catch (Exception e) {
             System.out.println(e.getMessage());

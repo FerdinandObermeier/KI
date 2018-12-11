@@ -1,0 +1,92 @@
+language ESSENCE' 1.0
+letting   NBROFHOUSE = 5
+find red, ivory, yellow, blue, green, english, spanish , norwegian, ukrainian, japanese, hershey, kitkats, smarties, snickers, milkyways, irnbru, orangejuice, tea, coffee, milk, zebra, dog, fox, snails, horse : int(1..NBROFHOUSE)
+
+$ encode in a matrix for implicit constraint
+find M: matrix indexed by [int(1..NBROFHOUSE), int(1..NBROFHOUSE)] of int(1..NBROFHOUSE)
+
+such that
+    $coding colour on the first row
+    M[1, 1] = red,
+    M[1, 2] = ivory,
+    M[1, 3] = yellow,
+    M[1, 4] = blue,
+    M[1, 5] = green,
+
+    $coding nationality on the second row
+    M[2, 1] = english,
+    M[2, 2] = spanish,
+    M[2, 3] = norwegian,
+    M[2, 4] = ukrainian,
+    M[2, 5] = japanese,
+
+    $coding food on the second row
+    M[3, 1] = hershey,
+    M[3, 2] = kitkats,
+    M[3, 3] = smarties,
+    M[3, 4] = snickers,
+    M[3, 5] = milkyways,
+
+    $coding drink on the fourth row
+    M[4, 1] = irnbru,
+    M[4, 2] = orangejuice,
+    M[4, 3] = tea,
+    M[4, 4] = coffee,
+    M[4, 5] = milk,
+
+    $coding pet on the fifth row
+    M[5, 1] = zebra,
+    M[5, 2] = dog,
+    M[5, 3] = fox,
+    M[5, 4] = snails,
+    M[5, 5] = horse,
+
+	
+	$ model implicit constraint that all houses have exactly one of each thing
+    forAll row : int(1..5) .
+       allDiff(M[row,..]),
+
+	   
+	$ model given constraints    
+
+    $The Englishman lives in the red house.
+    english = red, 
+
+    $The Spaniard owns the dog.
+    spanish = dog,
+    
+    $The Norwegian lives in the first house on the left. 
+    norwegian = 1,
+
+    $The green house is immediately to the right of the ivory house.
+    green = ivory + 1,
+
+    $The man who eats Hershey bars lives in the house next to the man with the fox.
+    |hershey - fox| = 1,
+
+    $Kit Kats are eaten in the yellow house.
+    kitkats = yellow,
+    
+    $The Norwegian lives next to the blue house.
+    |norwegian - blue| = 1,
+
+    $The Smarties eater owns snails.
+    smarties = snails,
+
+    $The Snickers eater drinks orange juice.
+    snickers = orangejuice,
+
+    $The Ukrainian drinks tea.
+    ukrainian = tea,
+
+    $The Japanese eats Milky Ways.
+    japanese = milkyways,
+
+    $Kit Kats are eaten in a house next to the house where the horse is kept.
+    |kitkats - horse| = 1,
+
+    $Coffee is drunk in the green house.
+    coffee = green,
+
+    $item Milk is drunk in the middle house.
+    milk = 3

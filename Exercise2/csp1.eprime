@@ -1,0 +1,33 @@
+language ESSENCE' 1.0
+
+$parameter declaration
+
+$constant definition
+letting risk=1
+letting scrabble=2
+letting uno=3
+letting lego=4
+
+$variable declaration
+$ andrea, beatrix, celeste, david, emanuel, frank, george, hilary
+find teams :  matrix indexed by [int(1..8)] of int(0..4)
+
+$constraints
+such that
+    forAll player : int(1..8) . teams[player] != 0,
+    $nicht richtig!!!
+    sum(teams) = 20,
+    forAll i : int(1..8) . (atleast(teams, 2, teams[i] = 2) /\ atmost(teams, 4, teams[i] = 2)),
+    forAll j : int(1..8) . (atleast(teams, 1, teams[j] = 4) /\ atmost(teams, 3, teams[j] = 4)),
+    forAll k : int(1..8) . (atleast(teams, 3, teams[k] = 1) /\ atmost(teams, 6, teams[k] = 1)),
+    forAll l : int(1..8) . (atleast(teams, 2, teams[l] = 3) /\ atmost(teams, 6, teams[l] = 3)),
+    teams[1] = teams[3],
+    $andrea = celeste,
+    teams[4] != teams[5] /\ teams[4] != teams[7] /\ teams[5] != teams[7],
+    $david != emanuel /\ david != george /\ emanuel != george,
+    teams[4] != 1 /\ teams[2] != 1,
+    $david != 1 /\ beatrix != 1,
+    teams[8] = 4 /\ teams[6] = 4,
+    $hilary = 4 /\ frank = 4,
+    teams[8] = teams[1] \/ teams[8] = teams[2] \/ teams[8] = teams[3]
+    $hilary = andrea \/ hilary = beatrix \/ hilary = celeste
