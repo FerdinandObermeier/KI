@@ -1,0 +1,46 @@
+MINION 3
+# CSETopLevel_number = 0
+# CSETopLevel_eliminated_expressions = 0
+# CSETopLevel_total_size = 0
+# CSE_active_number = 3
+# CSE_active_eliminated_expressions = 6
+# CSE_active_total_size = 9
+**VARIABLES**
+DISCRETE teams_00000 #
+{1..3}
+**CONSTRAINTS**
+w-inintervalset(teams_00000, [1,1,3,3])
+**VARIABLES**
+DISCRETE teams_00003 #
+{3..4}
+DISCRETE teams_00004 #
+{1..4}
+**CONSTRAINTS**
+w-inintervalset(teams_00004, [1,1,3,4])
+**VARIABLES**
+DISCRETE teams_00006 #
+{1..4}
+**CONSTRAINTS**
+w-inintervalset(teams_00006, [1,1,3,4])
+**VARIABLES**
+BOOL aux16 #Active-CSE: 2 occurrences of this expression or equivalent: (teams_00003=teams_00004)
+BOOL aux17 #Active-CSE: 2 occurrences of this expression or equivalent: (teams_00003=teams_00006)
+BOOL aux18 #Active-CSE: 2 occurrences of this expression or equivalent: (teams_00004=teams_00006)
+**SEARCH**
+PRINT[[teams_00000],[teams_00003],[teams_00004],[teams_00006]]
+VARORDER STATIC [teams_00000, 3, teams_00000, teams_00003, teams_00004, 4, teams_00006, 4]
+VARORDER AUX [teams_00000,teams_00003,teams_00004,teams_00006,aux16,aux17,aux18]
+**CONSTRAINTS**
+reify(gaceq(teams_00003,teams_00004), aux16)
+reify(gaceq(teams_00003,teams_00006), aux17)
+reify(gaceq(teams_00004,teams_00006), aux18)
+gacalldiff([teams_00003, teams_00004, teams_00006])
+occurrenceleq([teams_00000, teams_00000, teams_00003, teams_00004, teams_00006], 4, 1)
+watched-or({w-literal(teams_00006,3),w-literal(teams_00006,4),gaceq(teams_00000,teams_00006),w-literal(aux17,1),w-literal(aux18,1)})
+watched-or({w-literal(teams_00000,3),w-literal(teams_00003,3),w-literal(teams_00004,3),w-literal(teams_00006,3)})
+watched-or({occurrenceleq([teams_00000, teams_00000, teams_00003, teams_00004, teams_00006], 2, 0),watched-and({occurrenceleq([teams_00000, teams_00000, teams_00003, teams_00004, teams_00006], 2, 4),occurrencegeq([teams_00000, teams_00000, teams_00003, teams_00004, teams_00006], 2, 2)})})
+watched-or({occurrenceleq([teams_00000, teams_00000, teams_00003, teams_00004, teams_00006], 1, 0),occurrencegeq([teams_00000, teams_00000, teams_00003, teams_00004, teams_00006], 1, 3)})
+watched-or({w-literal(teams_00003,3),w-literal(teams_00003,4),gaceq(teams_00000,teams_00003),w-literal(aux16,1),w-literal(aux17,1)})
+watched-or({w-literal(teams_00004,3),w-literal(teams_00004,4),gaceq(teams_00000,teams_00004),w-literal(aux16,1),w-literal(aux18,1)})
+occurrencegeq([teams_00000, teams_00000, teams_00003, teams_00004, teams_00006], 3, 1)
+**EOF**

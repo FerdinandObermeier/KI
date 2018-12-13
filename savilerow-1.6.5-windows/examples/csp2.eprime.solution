@@ -1,0 +1,6 @@
+language ESSENCE' 1.0
+$ Minion SolverNodes: 22
+$ Minion SolverTotalTime: 0.09375
+$ Minion SolverTimeOut: 0
+$ Savile Row TotalTime: 0.317
+letting teams be [1, 2, 1, 2, 3, 3, 4, 1;int(1..8)]

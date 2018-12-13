@@ -3,7 +3,6 @@ language ESSENCE' 1.0
 $parameter declaration
 
 $constant definition
-letting nogame=0
 letting risk=1
 letting scrabble=2
 letting uno=3
@@ -29,5 +28,6 @@ such that
     teams[4] != risk /\ teams[2] != risk,
     $hilary = 4 /\ frank = 4
     teams[8] = lego /\ teams[6] = lego,
-    $hilary = andrea \/ hilary = beatrix \/ hilary = celeste
-    teams[8] = teams[1] \/ teams[8] = teams[2] \/ teams[8] = teams[3]
+    $no one plays scrabble
+    forAll player : int(1..8) . teams[player] != scrabble
+    

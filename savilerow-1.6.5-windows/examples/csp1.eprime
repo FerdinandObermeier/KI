@@ -3,6 +3,7 @@ language ESSENCE' 1.0
 $parameter declaration
 
 $constant definition
+letting nogame=0
 letting risk=1
 letting scrabble=2
 letting uno=3
@@ -14,20 +15,19 @@ find teams :  matrix indexed by [int(1..8)] of int(0..4)
 
 $constraints
 such that
-    forAll player : int(1..8) . teams[player] != 0,
-    $nicht richtig!!!
-    sum(teams) = 20,
-    forAll i : int(1..8) . (atleast(teams, 2, teams[i] = 2) /\ atmost(teams, 4, teams[i] = 2)),
-    forAll j : int(1..8) . (atleast(teams, 1, teams[j] = 4) /\ atmost(teams, 3, teams[j] = 4)),
-    forAll k : int(1..8) . (atleast(teams, 3, teams[k] = 1) /\ atmost(teams, 6, teams[k] = 1)),
-    forAll l : int(1..8) . (atleast(teams, 2, teams[l] = 3) /\ atmost(teams, 6, teams[l] = 3)),
+    forAll player : int(1..8) . teams[player] != nogame,
+    forAll i : int(1..8) . exists j : int(1..8) . i!=j /\ teams[i] = teams[j],
+    atleast(teams, [2], [scrabble]) /\ atmost(teams, [4], [scrabble]) \/ atmost(teams, [0], [scrabble]),
+    atleast(teams, [1], [lego]) /\ atmost(teams, [3], [lego]) \/ atmost(teams, [0], [lego]),
+    atleast(teams, [3], [risk]) /\ atmost(teams, [6], [risk]) \/ atmost(teams, [0], [risk]),
+    atleast(teams, [2], [uno]) /\ atmost(teams, [6], [uno]) \/ atmost(teams, [0], [uno]),
+    $andrea = celeste
     teams[1] = teams[3],
-    $andrea = celeste,
+    $david != emanuel /\ david != george /\ emanuel != george
     teams[4] != teams[5] /\ teams[4] != teams[7] /\ teams[5] != teams[7],
-    $david != emanuel /\ david != george /\ emanuel != george,
+    $david != 1 /\ beatrix != 1
     teams[4] != 1 /\ teams[2] != 1,
-    $david != 1 /\ beatrix != 1,
+    $hilary = 4 /\ frank = 4
     teams[8] = 4 /\ teams[6] = 4,
-    $hilary = 4 /\ frank = 4,
-    teams[8] = teams[1] \/ teams[8] = teams[2] \/ teams[8] = teams[3]
     $hilary = andrea \/ hilary = beatrix \/ hilary = celeste
+    teams[8] = teams[1] \/ teams[8] = teams[2] \/ teams[8] = teams[3]

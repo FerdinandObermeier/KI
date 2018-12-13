@@ -3,7 +3,6 @@ language ESSENCE' 1.0
 $parameter declaration
 
 $constant definition
-letting nogame=0
 letting risk=1
 letting scrabble=2
 letting uno=3
@@ -21,13 +20,12 @@ such that
     atleast(teams, [1], [lego]) /\ atmost(teams, [3], [lego]) \/ atmost(teams, [0], [lego]),
     atleast(teams, [3], [risk]) /\ atmost(teams, [6], [risk]) \/ atmost(teams, [0], [risk]),
     atleast(teams, [2], [uno]) /\ atmost(teams, [6], [uno]) \/ atmost(teams, [0], [uno]),
-    $andrea = celeste
-    teams[1] = teams[3],
-    $david != emanuel /\ david != george /\ emanuel != george
-    teams[4] != teams[5] /\ teams[4] != teams[7] /\ teams[5] != teams[7],
     $david != 1 /\ beatrix != 1
     teams[4] != risk /\ teams[2] != risk,
     $hilary = 4 /\ frank = 4
     teams[8] = lego /\ teams[6] = lego,
     $hilary = andrea \/ hilary = beatrix \/ hilary = celeste
-    teams[8] = teams[1] \/ teams[8] = teams[2] \/ teams[8] = teams[3]
+    teams[8] = teams[1] \/ teams[8] = teams[2] \/ teams[8] = teams[3],
+    $no one plays scrabble
+    forAll player : int(1..8) . teams[player] != scrabble
+    
