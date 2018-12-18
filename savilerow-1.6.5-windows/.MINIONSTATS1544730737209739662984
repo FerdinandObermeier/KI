@@ -1,0 +1,2 @@
+#"CommandLineArguments" "Filename" "FirstNodeTime" "InitialPropagate" "MinionVersion" "Nodes" "ParsingTime" "Preprocess" "RandomSeed" "Satisfiable" "SetupTime" "SolutionsFound" "SolveTime" "TimeOut" "TotalTime" 
+.\examples\csp1.eprime.minion,-printsolsonly,-preprocess,SACBounds,-tableout,.MINIONSTATS1544730737209739662984,-solsout,.MINIONSOLS1544730737209641125005,-noprintsols .\examples\csp1.eprime.minion 0 0 0 0 0 SACBounds 1544732350 0 0 0 0 0 0 

@@ -26,8 +26,8 @@ such that
     $david != emanuel /\ david != george /\ emanuel != george
     teams[4] != teams[5] /\ teams[4] != teams[7] /\ teams[5] != teams[7],
     $david != 1 /\ beatrix != 1
-    teams[4] != 1 /\ teams[2] != 1,
+    teams[4] != risk /\ teams[2] != risk,
     $hilary = 4 /\ frank = 4
-    teams[8] = 4 /\ teams[6] = 4,
+    teams[8] = lego /\ teams[6] = lego,
     $hilary = andrea \/ hilary = beatrix \/ hilary = celeste
     teams[8] = teams[1] \/ teams[8] = teams[2] \/ teams[8] = teams[3]

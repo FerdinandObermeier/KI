@@ -3,12 +3,13 @@ Matrikelnr. 03665133
 
 Choice of variables = I chose to assign:
 
+- The number 0 to the variable nogame
 - The number 1 to the variable risk
 - The number 2 to the variable scrabble
 - The number 3 to the variable UNO
 - The number 4 to the variable lego
 
-- A matrix consisting of 8 entries to the variable "teams".
+- A matrix consisting of 8 entries to the variable teams.
 The entries correspond to the players, so entry:
 > 1 is the entry for Andrea
 > 2 is the entry for Beatrix
@@ -26,7 +27,7 @@ Each entry can take an int between 0 and 4, where:
 + 3 indicates, that uno is played
 + 4 indicates, that lego is played
 
-So for example, if entry 5 of the teams matrix is 3, this means, that Emanuel is playing uno.
+So for example, if entry 5 of the teams matrix is 3, this means, that Emanuel is playing UNO.
 
 Solution 2.1:
 No solution found

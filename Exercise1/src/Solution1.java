@@ -170,7 +170,7 @@ public class Solution1 {
     }
 
     public static boolean goUp(char[][] inputMatrix, int currentPositionI, int currentPositionJ) {
-        if(currentPositionI == 0 || inputMatrix[currentPositionI-1][currentPositionJ] == '*'){
+        if(currentPositionI == 0 || inputMatrix[currentPositionI-1][currentPositionJ] == '*' || inputMatrix[currentPositionI-1][currentPositionJ] == 'R'){
             return false;
         }
         else{
@@ -179,7 +179,7 @@ public class Solution1 {
     }
 
     public static boolean goDown(char[][] inputMatrix, int currentPositionI, int currentPositionJ) {
-        if(currentPositionI == inputMatrix.length-1 || inputMatrix[currentPositionI+1][currentPositionJ] == '*'){
+        if(currentPositionI == inputMatrix.length-1 || inputMatrix[currentPositionI+1][currentPositionJ] == '*' || inputMatrix[currentPositionI+1][currentPositionJ] == 'R'){
             return false;
         }
         else{
@@ -188,7 +188,7 @@ public class Solution1 {
     }
 
     public static boolean goRight(char[][] inputMatrix, int currentPositionI, int currentPositionJ) {
-        if(currentPositionJ == inputMatrix[0].length-1 || inputMatrix[currentPositionI][currentPositionJ+1] == '*'){
+        if(currentPositionJ == inputMatrix[0].length-1 || inputMatrix[currentPositionI][currentPositionJ+1] == '*' || inputMatrix[currentPositionI][currentPositionJ+1] == 'R'){
             return false;
         }
         else{
@@ -197,7 +197,7 @@ public class Solution1 {
     }
 
     public static boolean goLeft(char[][] inputMatrix, int currentPositionI, int currentPositionJ) {
-        if(currentPositionJ == 0 || inputMatrix[currentPositionI][currentPositionJ-1] == '*'){
+        if(currentPositionJ == 0 || inputMatrix[currentPositionI][currentPositionJ-1] == '*' || inputMatrix[currentPositionI][currentPositionJ-1] == 'R'){
             return false;
         }
         else{
@@ -206,7 +206,7 @@ public class Solution1 {
     }
 
     public static boolean goDiagonalUpperRight(char[][] inputMatrix, int currentPositionI, int currentPositionJ) {
-        if(currentPositionI == 0 || currentPositionJ == inputMatrix[0].length-1 || inputMatrix[currentPositionI-1][currentPositionJ+1] == '*'){
+        if(currentPositionI == 0 || currentPositionJ == inputMatrix[0].length-1 || inputMatrix[currentPositionI-1][currentPositionJ+1] == '*' || inputMatrix[currentPositionI-1][currentPositionJ+1] == 'R'){
             return false;
         }
         else{
@@ -215,7 +215,7 @@ public class Solution1 {
     }
 
     public static boolean goDiagonalUpperLeft(char[][] inputMatrix, int currentPositionI, int currentPositionJ) {
-        if(currentPositionI == 0 || currentPositionJ == 0 || inputMatrix[currentPositionI-1][currentPositionJ-1] == '*'){
+        if(currentPositionI == 0 || currentPositionJ == 0 || inputMatrix[currentPositionI-1][currentPositionJ-1] == '*' ||inputMatrix[currentPositionI-1][currentPositionJ-1] == 'R'){
             return false;
         }
         else{
@@ -224,7 +224,7 @@ public class Solution1 {
     }
 
     public static boolean goDiagonalLowerRight(char[][] inputMatrix, int currentPositionI, int currentPositionJ) {
-        if(currentPositionI == inputMatrix.length-1 || currentPositionJ == inputMatrix[0].length-1 || inputMatrix[currentPositionI+1][currentPositionJ+1] == '*'){
+        if(currentPositionI == inputMatrix.length-1 || currentPositionJ == inputMatrix[0].length-1 || inputMatrix[currentPositionI+1][currentPositionJ+1] == '*' ||inputMatrix[currentPositionI+1][currentPositionJ+1] == 'R'){
             return false;
         }
         else{
@@ -233,7 +233,7 @@ public class Solution1 {
     }
 
     public static boolean goDiagonalLowerLeft(char[][] inputMatrix, int currentPositionI, int currentPositionJ) {
-        if(currentPositionI == inputMatrix.length-1 || currentPositionJ == 0 || inputMatrix[currentPositionI+1][currentPositionJ-1] == '*'){
+        if(currentPositionI == inputMatrix.length-1 || currentPositionJ == 0 || inputMatrix[currentPositionI+1][currentPositionJ-1] == '*' || inputMatrix[currentPositionI+1][currentPositionJ-1] == 'R'){
             return false;
         }
         else{
@@ -307,8 +307,6 @@ public class Solution1 {
         String filename = args[0];
         char [][] inputMatrix = readFile(filename);
 
-
-        System.out.println(inputMatrix);
         /* Your main function to solve the problem*/
         String out = solveTask1(inputMatrix);
         System.out.println(out);

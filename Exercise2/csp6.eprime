@@ -3,6 +3,7 @@ language ESSENCE' 1.0
 $parameter declaration
 
 $constant definition
+letting nogame=0
 letting risk=1
 letting scrabble=2
 letting uno=3
