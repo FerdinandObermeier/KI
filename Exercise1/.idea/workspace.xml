@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68122d91-541c-4eef-aa33-0613b1233aa8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Solution1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercise2/csp2.eprime" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise2/csp2.eprime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercise2/csp3.eprime" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise2/csp3.eprime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercise2/csp4.eprime" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise2/csp4.eprime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercise2/csp5.eprime" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise2/csp5.eprime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercise2/csp6.eprime" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise2/csp6.eprime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercise2/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise2/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp1.eprime" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp1.eprime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp1.eprime.info" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp1.eprime.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp1.eprime.infor" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp1.eprime.infor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp1.eprime.minion" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp1.eprime.minion" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp2.eprime" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp2.eprime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp2.eprime.info" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp2.eprime.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp2.eprime.infor" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp2.eprime.infor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp2.eprime.minion" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp2.eprime.minion" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp2.eprime.solution" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp2.eprime.solution" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp3.eprime" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp3.eprime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp3.eprime.info" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp3.eprime.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp3.eprime.infor" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp3.eprime.infor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp3.eprime.minion" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp3.eprime.minion" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp4.eprime" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp4.eprime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp4.eprime.info" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp4.eprime.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp4.eprime.infor" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp4.eprime.infor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp4.eprime.minion" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp4.eprime.minion" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp4.eprime.solution" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp4.eprime.solution" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp5.eprime" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp5.eprime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp5.eprime.info" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp5.eprime.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp5.eprime.infor" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp5.eprime.infor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp5.eprime.minion" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp5.eprime.minion" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp5.eprime.solution" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp5.eprime.solution" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp6.eprime" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp6.eprime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp6.eprime.info" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp6.eprime.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp6.eprime.infor" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp6.eprime.infor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp6.eprime.minion" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp6.eprime.minion" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp6.eprime.solution" beforeDir="false" afterPath="$PROJECT_DIR$/../savilerow-1.6.5-windows/examples/csp6.eprime.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Exercise1/Solution1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercise1/Solution1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Solution2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +18,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Solution2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="142" column="12" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="12" />
+            <state relative-caret-position="280">
+              <caret line="142" column="56" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,8 +30,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Solution1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="306" column="33" selection-start-line="306" selection-start-column="33" selection-end-line="306" selection-end-column="33" />
+            <state relative-caret-position="317">
+              <caret line="299" column="9" lean-forward="true" selection-start-line="299" selection-start-column="9" selection-end-line="299" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,8 +48,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/MinimumCost.java" />
-        <option value="$PROJECT_DIR$/src/Solution2.java" />
         <option value="$PROJECT_DIR$/src/Solution1.java" />
+        <option value="$PROJECT_DIR$/src/Solution2.java" />
       </list>
     </option>
   </component>
@@ -91,6 +65,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,14 +83,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545080606062" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545409687770" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -130,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution1">
+  <component name="RunManager" selected="Application.Solution2">
     <configuration name="Solution1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Solution1" />
       <module name="Exercise1" />
@@ -147,8 +121,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution1" />
         <item itemvalue="Application.Solution2" />
+        <item itemvalue="Application.Solution1" />
       </list>
     </recent_temporary>
   </component>
@@ -167,16 +141,19 @@
       <workItem from="1544265234830" duration="15000" />
       <workItem from="1544265296851" duration="239000" />
       <workItem from="1545078873563" duration="1734000" />
+      <workItem from="1545130000869" duration="30000" />
+      <workItem from="1545398038936" duration="2175000" />
+      <workItem from="1545405913063" duration="1060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4907000" />
+    <option name="totallyTimeSpent" value="8172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -243,17 +220,35 @@
     <entry file="file://$PROJECT_DIR$/input_for_task1(2).txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/input_for_task2(3).txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_for_task2(4).txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_for_task2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="142" column="12" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="12" />
+        <state relative-caret-position="280">
+          <caret line="142" column="56" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/input_for_task1(3).txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="306" column="33" selection-start-line="306" selection-start-column="33" selection-end-line="306" selection-end-column="33" />
+        <state relative-caret-position="317">
+          <caret line="299" column="9" lean-forward="true" selection-start-line="299" selection-start-column="9" selection-end-line="299" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

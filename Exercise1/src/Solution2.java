@@ -140,7 +140,7 @@ public class Solution2 {
     public static void main(String[] args) {
         try {
             /* Read the input matrix*/
-            char[][] input = readFile(args[0]);
+            char[][] input = readFile("input_for_task2(5).txt");
 
             /* Your main function to solve the problem*/
             char[][] output = solveTask2(input);
